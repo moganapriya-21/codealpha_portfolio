@@ -1,0 +1,100 @@
+<!-- ══════════════════════════════════════════════════════════
+     CONTACT SECTION
+     Contact form + info cards
+══════════════════════════════════════════════════════════ -->
+<section class="contact section-pad" id="contact">
+  <div class="container">
+
+    <div class="section-label reveal">
+      <span class="label-line"></span> Get In Touch
+    </div>
+
+    <h2 class="section-title centered reveal">
+      Let's <span class="gradient-text">Connect</span>
+    </h2>
+
+    <div class="contact-grid">
+
+      <!-- Info Cards -->
+      <div class="contact-info reveal">
+
+        <p class="contact-intro">
+          I'm currently open to internship opportunities, part-time projects, and collaborations. Whether you have a question or just want to say hi — my inbox is always open!
+        </p>
+
+        <div class="contact-card">
+          <i class="ph ph-envelope-simple"></i>
+          <div>
+            <span class="card-label">Email</span>
+            <a href="mailto:moganapriyasankar699@gmail.com" class="card-value">
+              moganapriyasankar699@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <i class="ph ph-phone"></i>
+          <div>
+            <span class="card-label">Phone</span>
+            <a href="tel:+918925722699" class="card-value">+91 89257 22699</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <i class="ph ph-map-pin"></i>
+          <div>
+            <span class="card-label">Location</span>
+            <span class="card-value">Chennai, Tamil Nadu, India</span>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/moganapriya-sankar-2006-sutdent" target="_blank" rel="noopener" class="social-btn linkedin">
+            <i class="ph ph-linkedin-logo"></i> LinkedIn
+          </a>
+          <a href="https://github.com/moganapriya-21" target="_blank" rel="noopener" class="social-btn github">
+            <i class="ph ph-github-logo"></i> GitHub
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap reveal">
+        <div class="glass-form">
+          <h3 class="form-heading">Send a Message</h3>
+
+          <!-- NOTE: No <form> tag used; handled via JS -->
+          <div class="form-group">
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName" placeholder="e.g. Ravi Kumar" autocomplete="off" />
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" placeholder="ravi@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" placeholder="Internship Opportunity" />
+          </div>
+
+          <div class="form-group">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" rows="5" placeholder="Hi Moganapriya, I'd love to connect..."></textarea>
+          </div>
+
+          <button class="btn btn-primary full-width" id="sendMsgBtn" onclick="handleContactSubmit()">
+            <i class="ph ph-paper-plane-tilt"></i> Send Message
+          </button>
+
+          <p class="form-success" id="formSuccess">
+            <i class="ph ph-check-circle"></i> Message sent! I'll get back to you soon.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
