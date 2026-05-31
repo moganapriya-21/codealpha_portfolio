@@ -1,13 +1,6 @@
-/* ═══════════════════════════════════════════════════════════════
-   MOGANAPRIYA SANKAR — PORTFOLIO 2026
-   Dark Glassmorphism Theme | Syne + DM Sans
-   ═══════════════════════════════════════════════════════════════ */
 
-/* ──────────────────────────────────────────
-   1. CSS VARIABLES (Design Tokens)
-────────────────────────────────────────── */
 :root {
-  /* Colors */
+ 
   --bg:          #080b14;
   --bg-2:        #0d1120;
   --bg-3:        #111827;
@@ -16,35 +9,30 @@
   --border:      rgba(255,255,255,0.08);
   --border-2:    rgba(255,255,255,0.14);
 
-  /* Accent gradient: teal → violet */
+ 
   --accent-1:    #00d4aa;
   --accent-2:    #7c3aed;
   --accent-3:    #06b6d4;
   --gradient:    linear-gradient(135deg, var(--accent-1), var(--accent-2));
 
-  /* Text */
   --text:        #e8edf5;
   --text-muted:  #7a8399;
   --text-faint:  #3d4a60;
 
-  /* Sizes */
+ 
   --radius:      14px;
   --radius-lg:   22px;
   --radius-xl:   32px;
   --nav-h:       68px;
 
-  /* Fonts */
+ 
   --font-display: 'Syne', sans-serif;
   --font-body:    'DM Sans', sans-serif;
 
-  /* Shadows */
   --shadow:      0 8px 32px rgba(0,0,0,0.45);
   --shadow-glow: 0 0 40px rgba(0,212,170,0.15);
 }
 
-/* ──────────────────────────────────────────
-   2. RESET & BASE
-────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
@@ -61,7 +49,7 @@ body {
   font-size: 16px;
 }
 
-/* Custom scrollbar */
+
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--accent-1); border-radius: 4px; }
@@ -70,9 +58,7 @@ a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 ul { list-style: none; }
 
-/* ──────────────────────────────────────────
-   3. LAYOUT HELPERS
-────────────────────────────────────────── */
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -81,9 +67,7 @@ ul { list-style: none; }
 
 .section-pad { padding: 100px 0; }
 
-/* ──────────────────────────────────────────
-   4. TYPOGRAPHY UTILITIES
-────────────────────────────────────────── */
+
 .section-label {
   display: flex;
   align-items: center;
@@ -121,9 +105,6 @@ ul { list-style: none; }
   background-clip: text;
 }
 
-/* ──────────────────────────────────────────
-   5. BUTTONS
-────────────────────────────────────────── */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -159,9 +140,6 @@ ul { list-style: none; }
 }
 .btn.full-width { width: 100%; justify-content: center; }
 
-/* ──────────────────────────────────────────
-   6. TAGS / CHIPS
-────────────────────────────────────────── */
 .tag {
   display: inline-block;
   padding: 4px 12px;
@@ -192,9 +170,7 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 
-/* ──────────────────────────────────────────
-   7. SCROLL REVEAL ANIMATION
-────────────────────────────────────────── */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -205,9 +181,7 @@ ul { list-style: none; }
   transform: translateY(0);
 }
 
-/* ──────────────────────────────────────────
-   8. NAVBAR
-────────────────────────────────────────── */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -269,7 +243,7 @@ ul { list-style: none; }
   background: rgba(0,212,170,0.22) !important;
 }
 
-/* Hamburger */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -291,7 +265,7 @@ ul { list-style: none; }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Mobile nav */
+
 @media (max-width: 768px) {
   .hamburger { display: flex; }
   .nav-links {
@@ -311,9 +285,7 @@ ul { list-style: none; }
   .nav-link { width: 100%; text-align: center; padding: 12px; }
 }
 
-/* ──────────────────────────────────────────
-   9. HERO SECTION
-────────────────────────────────────────── */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -324,7 +296,7 @@ ul { list-style: none; }
   padding-top: var(--nav-h);
 }
 
-/* Background blobs */
+
 .blob {
   position: absolute;
   border-radius: 50%;
@@ -356,7 +328,7 @@ ul { list-style: none; }
   66%       { transform: translate(-10px,20px) scale(0.97); }
 }
 
-/* Grid overlay */
+
 .hero-grid {
   position: absolute;
   inset: 0;
@@ -481,9 +453,7 @@ ul { list-style: none; }
   100% { opacity:0; transform:scaleY(0); transform-origin:bottom; }
 }
 
-/* ──────────────────────────────────────────
-   10. ABOUT SECTION
-────────────────────────────────────────── */
+
 .about { background: var(--bg-2); }
 
 .about-grid {
@@ -496,7 +466,7 @@ ul { list-style: none; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
-/* Avatar */
+
 .about-visual { display:flex; flex-direction:column; align-items:center; gap:32px; }
 .avatar-card {
   position: relative;
@@ -572,9 +542,6 @@ ul { list-style: none; }
 }
 .highlight-item i { color:var(--accent-1); font-size:1.1rem; flex-shrink:0; }
 
-/* ──────────────────────────────────────────
-   11. SKILLS SECTION
-────────────────────────────────────────── */
 .skills { background: var(--bg); }
 
 .skills-grid {
@@ -627,13 +594,11 @@ ul { list-style: none; }
   transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
 }
 
-/* Soft skills */
+
 .soft-skills { text-align:center; }
 .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:16px; }
 
-/* ──────────────────────────────────────────
-   12. PROJECTS SECTION
-────────────────────────────────────────── */
+
 .projects { background: var(--bg-2); }
 
 .projects-grid {
@@ -719,9 +684,6 @@ ul { list-style: none; }
 .project-desc { font-size:0.88rem; color:var(--text-muted); margin-bottom:16px; line-height:1.65; }
 .project-tags { display:flex; flex-wrap:wrap; gap:6px; }
 
-/* ──────────────────────────────────────────
-   13. INTERNSHIP / TIMELINE SECTION
-────────────────────────────────────────── */
 .internship { background: var(--bg); }
 
 .timeline {
@@ -790,9 +752,7 @@ ul { list-style: none; }
 .timeline-desc { font-size:0.88rem; color:var(--text-muted); margin-bottom:16px; line-height:1.7; }
 .timeline-tags { display:flex; flex-wrap:wrap; gap:6px; }
 
-/* ──────────────────────────────────────────
-   14. RESUME SECTION
-────────────────────────────────────────── */
+
 .resume { background: var(--bg-2); }
 
 .resume-card {
@@ -831,7 +791,7 @@ ul { list-style: none; }
 .res-item i { color:var(--accent-1); font-size:1.1rem; flex-shrink:0; }
 .download-btn { font-size:0.95rem; }
 
-/* Preview mockup */
+
 .resume-preview {
   text-align:center;
 }
@@ -858,9 +818,7 @@ ul { list-style: none; }
 }
 .preview-label { font-size:0.78rem; color:var(--text-faint); margin-top:12px; }
 
-/* ──────────────────────────────────────────
-   15. CONTACT SECTION
-────────────────────────────────────────── */
+
 .contact { background: var(--bg); }
 
 .contact-grid {
@@ -914,7 +872,7 @@ ul { list-style: none; }
 .social-btn.linkedin:hover { background:rgba(0,119,181,0.2); }
 .social-btn.github:hover   { border-color:var(--text-muted); }
 
-/* Glass form */
+
 .glass-form {
   background: var(--surface);
   border: 1px solid var(--border-2);
@@ -969,9 +927,7 @@ ul { list-style: none; }
 }
 .form-success.show { display:flex; }
 
-/* ──────────────────────────────────────────
-   16. FOOTER
-────────────────────────────────────────── */
+
 .footer {
   background: var(--bg-2);
   border-top:1px solid var(--border);
@@ -999,9 +955,7 @@ ul { list-style: none; }
 }
 .footer-links a:hover { border-color:var(--accent-1); color:var(--accent-1); transform:translateY(-2px); }
 
-/* ──────────────────────────────────────────
-   17. SCROLL-TO-TOP BUTTON
-────────────────────────────────────────── */
+
 .scroll-top {
   position:fixed; bottom:28px; right:28px;
   width:46px; height:46px;
@@ -1018,9 +972,7 @@ ul { list-style: none; }
 .scroll-top.visible { opacity:1; pointer-events:all; }
 .scroll-top:hover { transform:scale(1.1); }
 
-/* ──────────────────────────────────────────
-   18. RESPONSIVE HELPERS
-────────────────────────────────────────── */
+
 @media (max-width: 600px) {
   .section-pad { padding: 64px 0; }
   .hero-cta { flex-direction: column; align-items:center; }
