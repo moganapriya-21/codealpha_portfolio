@@ -12,8 +12,8 @@ async function loadSection(id, filePath) {
 
 async function loadAllSections() {
 
-  await loadSection('navbar-placeholder',     'components/navbar.html');
-  await loadSection('footer-placeholder',     'components/footer.html');
+  await loadSection('navbar-placeholder',     'sections/navbar.html');
+  await loadSection('footer-placeholder',     'sections/footer.html');
 
 
   await loadSection('hero-placeholder',       'sections/hero.html');
